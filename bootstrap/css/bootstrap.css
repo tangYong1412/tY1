@@ -1,0 +1,140 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#accordion div{
+	background: #182F41;
+	margin: 0px;
+}
+.a{
+	color: #FFFFFF;
+	font-size: 20px;
+	padding-left: 30px;
+}
+.drop{
+	width: 200px;
+	height: 50px;
+	margin-top: 10px;
+	padding-left: 50px;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.drop:hover{
+	background-color: #F76C40;
+}
+.choice p{
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+	padding-top: 15px;
+	text-align: center;
+}
+form{
+	font-size: 20px;
+}
+input{
+	width: 200px;
+	height:50px;
+}
+button{
+	width: 100PX;
+	height: 50PX;
+	background-color: #F76C40;
+}
+#web{
+	height: 950px;
+	display: flex;
+	justify-content: center;
+}
+.navigation{
+	width: 200px;
+	height: 100%;
+	margin-right: 10px;
+	background: #182F41;
+	display: flex;
+	flex-direction: column;
+}
+.table{
+	width: 1800px;
+	height: 800px;
+}
+.head{
+	width: 1800px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.main{
+	width: 1800px;
+	height: 800px;
+}
+.table tbody tr th{
+	vertical-align: middle;
+}
+.firstTr{
+	background: #F76C40;
+	color: #FFFFFF
+}
+.Box{
+	width: 20px;
+	height: 20px;
+	display: flex；
+	margin:10px;
+	background: #C0C0C0;
+	border: 1px solid #E0EAEE;
+}
+.foot{
+	width: 1800px;
+	height: 100px;
+}
+.search{
+	width: 500px;
+	height: 50px;
+	display: flex;
+	align-items: center;	
+}
+.choice{
+	width: 800px;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+tr{
+	width: 1800px;
+	height: 40px;
+}
+th{
+	font-size: 15px;
+	font-weight: 500;
+}
+.foot{
+	width: 1800px;
+	height: 100px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.Bigbox{
+	width: 310px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+.box{
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	padding-top: 10px;
+	text-align: center;
+	border: 1px solid black;
+}
+.specialbox{
+	width:100px;
+	height: 40px;
+	margin-left: 10px;
+	padding-top: 10px;
+	text-align: center;
+	border: 1px solid black;
+}
+
