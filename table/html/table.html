@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/table.css">
+		<title></title>
+	</head>
+
+	<body>
+		<table id="table">
+			<tr class="tr" onmouseover="over(this)" onmouseout="out(this)">
+				<th>
+					姓名
+				</th>
+				<th>
+					年龄
+				</th>
+				<th>
+					性别
+				</th>
+				<th>
+					删除
+				</th>
+			</tr>
+		</table>
+		<form name="form" onsubmit="return false">
+			姓名：<input type="text" name="name">
+			年龄：<input type="number" name="age">
+			性别：<input type="text" name="sex">
+			<button onclick="add()">添加</button>
+		</form>
+		<script type="text/javascript" src="../js/table.js"></script>
+</body>
+</html>
