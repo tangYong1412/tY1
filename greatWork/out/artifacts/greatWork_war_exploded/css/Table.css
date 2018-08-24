@@ -1,0 +1,119 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/lionMessi.jpg');
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+}
+#bigBox{
+    display: flex;
+    justify-content: center;
+}
+#add{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#back1{
+    width: 450px;
+    height: 650px;
+    border: 1px solid cornflowerblue;
+}
+.in{
+    display: flex;
+}
+.more{
+    font-size: 30px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+#update{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#back2{
+    width: 450px;
+    height: 650px;
+    border: 1px solid cornflowerblue;
+}
+form{
+    width: 250px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+}
+.studentM{
+    margin-left: 125px;
+}
+p{
+    color: #FFFFFF;
+}
+.btn{
+    width:150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: cornflowerblue;
+}
+tr{
+    background-color: dimgrey;
+}
+td{
+    font-size: 20px;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myTable{
+    width: 700px;
+    margin: 0px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+.titile{
+    background: #F76C40;
+    color: #FFFFFF
+}
+.btn1{
+    margin: 0px;
+    padding: 0px;
+    background-color: dimgrey;
+    font-size: 15px;
+    color: gainsboro;
+    cursor: pointer;
+}
+.closebtn{
+    font-size: 36px;
+    color: #FFFFFF;
+    text-underline: none;
+}
+a{
+    margin-left: 400px;
+}

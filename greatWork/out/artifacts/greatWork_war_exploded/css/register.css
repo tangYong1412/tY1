@@ -1,0 +1,36 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: url('../image/NeymarAndMessi.jpg');
+    background-size: cover;
+}
+form{
+    width: 380px;
+    height: 250px;
+    margin: 300px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+    border: 1px solid cornflowerblue;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#nameTipMsg{
+    width: 150px;
+}
+.user{
+    margin-right: 50px;
+}
+.pS{
+    margin-right: 30px;
+}
+.ps{
+    margin-right: 80px;
+}
+#btn{
+    width: 150px;
+    height: 30px;
+    background-color: cornflowerblue;
+    margin-left: 20px;
+}

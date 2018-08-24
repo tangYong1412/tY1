@@ -1,0 +1,56 @@
+body{
+     width: 100%;
+     height: 100%;
+     background: url('../image/messi.jpg');
+     background-size: cover;
+ }
+input{
+    width: 200px;
+    height: 20px;
+}
+#box{
+    width: 400px;
+    height: 350px;
+    margin: 300px auto;
+    border: 1px solid cornflowerblue;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.titile{
+    margin-left: 125px;
+    color: #FFFFFF;
+}
+#submit{
+    width: 400px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+.user{
+    margin-right: 60px;
+}
+.passWord{
+    margin-right: 50px;
+}
+.check{
+    display: flex;
+}
+#checkBox{
+    width: 20px;
+    height: 20px;
+    background-color: dimgrey;
+    border: 1px solid cornflowerblue;
+    border-radius: 2px;
+    outline: none;
+}
+#btn{
+    height: 30px;
+    background-color: cornflowerblue;
+}
+a{
+    margin-right: 10px;
+}
