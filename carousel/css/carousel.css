@@ -1,0 +1,84 @@
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+ul li{
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}/* 浮动>>一行排列 */  
+#banner{
+    margin: 0 auto;/* 居中 */
+    width: 400px;
+    height: 400px;
+    position: relative;/* 父级相对定位 */
+}
+#imgs{
+    width: 400px;
+    height: 400px;
+    float: left;
+    overflow: hidden;
+    position: relative;/* 父级相对定位 */
+}/* 显示轮播图片div */
+img{
+    width: 400px;
+    height: 400px;
+}/* 控制图片大小 */
+#imgs ul{
+    width: 2400px;
+    height: 400px;
+    left: -400px;/* 使第一张图片为与imgs左边 */
+    position: absolute;/* 绝对定位>>脱离文档流 */
+    z-index: 1;/* 叠加顺序 值大叠加在值小的上*/
+}
+#tab-btn{
+    width: 100px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 5;/* 设置叠加顺序 ，是左右按钮显示在图片上*/
+}
+#tab-btn ul li a{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;/* 行高 */
+    display: inline-block;/* 是元素既有高度宽度特性，又同行特性 */
+    background: #FFF;
+    border-radius: 10px;/* 设置圆点 */
+    margin-right: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+#tab-l,#tab-r{
+    width: 100px;
+    background: #000;
+    font-size: 20px;
+    font-weight: 900;/* 字体粗细 */
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    position: absolute;
+    top: 50%;/* 上下居中 */
+    color: #FFF;
+    z-index: 3;/* 设置叠加顺序 */
+}
+#tab-l{
+    left: 0px;
+}
+#tab-r{
+    right: 0px;
+}
+#tab-btn ul li a.current{
+    background: red;
+    color: #FFF;
+}
+#tab-btn ul li a.hidden{
+    background: #FFF;
+    color: #000;
+}
+        
+        
+
