@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="unnamed" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d7fb16b3-be43-4d6e-b158-7f9ad0a72b9d" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/tangYong/genericity/selectSort.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/genericity/bubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/dataStructure/linkList.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/dataStructure/stack.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/dataStructure/arryList.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/binaryTree.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/genericity/binaryTree.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/binaryTree/binaryTree.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/thread/myThread.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/thread/MyThread.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/thread/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/binaryTree/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/binaryTree/ArrayList.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/binaryTree/LinkList.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/flection/Persion.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/binaryTree/Queue.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/dataStructure/queue.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/binaryTree/Stack.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/binaryTree/BubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/genericity/BubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/binaryTree/SelecSort.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/genericity/SelecSort.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/flection/Flection.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/annotation/Annotation.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/annotation/Column.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/annotation/TeacherEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/annotation/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/Tcp/Tcp_One_To_One_Client.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/Tcp/Tcp_One_To_One_Server.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/Ioc/Cell.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/Ioc/Birder.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/Ioc/Animal.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/Ioc/Ioc.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/Udp/Udp_One_To_One_Client.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/Udp/Udp_One_To_One_Server.java" />
+        <option value="$PROJECT_DIR$/src/com/tangYong/dataStructure/Queue.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-35" />
+    <option name="y" value="170" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tangYong" type="58d84e3e:PackageViewProjectNode" />
+              <item name="tangYong" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tangYong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tangYong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tangYong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tangYong" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tangYong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tangYong" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tangYong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tangYong" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tangYong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tangYong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tangYong" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tangYong" type="462c0819:PsiDirectoryNode" />
+              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tangYong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tangYong" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tangYong" type="462c0819:PsiDirectoryNode" />
+              <item name="genericity" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Tcp_One_To_One_Client">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tangYong.genericity.BubbleSort" />
+      <module name="tangYong" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tangYong.genericity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Ioc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tangYong.Ioc.Ioc" />
+      <module name="tangYong" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tangYong.Ioc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="SelecSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tangYong.genericity.SelecSort" />
+      <module name="tangYong" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tangYong.genericity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Tcp_One_To_One_Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tangYong.Tcp.Tcp_One_To_One_Client" />
+      <module name="tangYong" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tangYong.Tcp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Tcp_One_To_One_Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tangYong.Tcp.Tcp_One_To_One_Server" />
+      <module name="tangYong" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tangYong.Tcp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Application.BubbleSort" />
+      <item itemvalue="Application.SelecSort" />
+      <item itemvalue="Application.Ioc" />
+      <item itemvalue="Application.Tcp_One_To_One_Client" />
+      <item itemvalue="Application.Tcp_One_To_One_Server" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Tcp_One_To_One_Client" />
+        <item itemvalue="Application.Tcp_One_To_One_Server" />
+        <item itemvalue="Application.Ioc" />
+        <item itemvalue="Application.SelecSort" />
+        <item itemvalue="Application.BubbleSort" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7fb16b3-be43-4d6e-b158-7f9ad0a72b9d" name="Default" comment="" />
+      <created>1533799746795</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533799746795</updated>
+      <workItem from="1533799748646" duration="23334000" />
+      <workItem from="1533827252682" duration="8733000" />
+      <workItem from="1533860731434" duration="22108000" />
+      <workItem from="1533897805467" duration="4998000" />
+      <workItem from="1533948855253" duration="27507000" />
+      <workItem from="1533983030426" duration="1383000" />
+      <workItem from="1534043030268" duration="275000" />
+      <workItem from="1534043623290" duration="179000" />
+      <workItem from="1534044295803" duration="84000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="88601000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-35" y="170" width="1940" height="1100" extended-state="0" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2822335" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32994923" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17671518" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32847533" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../../icode/唐勇/com/tangYong/dataStructure/ArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/annotation/TeacherEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/flection/Persion.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/flection/Flection.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/annotation/Column.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/annotation/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/annotation/TeacherEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/annotation/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/annotation/Column.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/arryList.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/LinkList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/binaryTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/arryList.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/LinkList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/genericity/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/genericity/selectSort.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/annotation/Annotation.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_75/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="365" selection-start-line="365" selection-end-line="365" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/flection/Persion.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_75/src.zip!/java/net/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="915" selection-start-line="915" selection-end-line="915" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/Ioc/Tiger.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/annotation/Column.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/annotation/TeacherEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/annotation/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/Ioc/Animal.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/Ioc/Cell.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/flection/Flection.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/thread/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/thread/MyThread.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/Udp/Udp_One_To_One_Server.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/Udp/Udp_One_To_One_Client.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/binaryTree/BinaryTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/LinkList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/dataStructure/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/genericity/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/genericity/SelecSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/Tcp/Tcp_One_To_One_Server.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/Ioc/Ioc.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/Ioc/Birder.java" />
+    <entry file="file://$PROJECT_DIR$/../../../icode/唐勇/com/tangYong/dataStructure/ArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangYong/Tcp/Tcp_One_To_One_Client.java" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>unnamed</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>tangYong</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
