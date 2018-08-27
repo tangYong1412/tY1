@@ -24,7 +24,7 @@ function check(studentNumber) {
         url:'/check.do',
         method:"POST",
         data:{
-            studentNumber: studentNumber,
+            userNumber: studentNumber,
             tableName: "student",
         },
         success:function (result) {

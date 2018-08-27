@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLException;
 
 @WebServlet(name = "judgeServlet")
 public class judgeServlet extends HttpServlet {
@@ -23,22 +22,17 @@ public class judgeServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         Controller controller = new Controller();
+        boolean result = controller.checkUserNumber(userNumber, tableName);
 
-        try {
-            if(controller.checkUserNumber(userNumber, tableName)){
-                out.print("<font color='green'>用户名可用</font>");
-            }
-            else{
-                out.print("<font color='red'>用户名已被注册</font>");
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+        if(result){
+            out.print("<font color='green'>用户名可用</font>");
+        }
+        else{
+            out.print("<font color='red'>用户名已被注册</font>");
         }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        this.doPost(request, response);
     }
 }

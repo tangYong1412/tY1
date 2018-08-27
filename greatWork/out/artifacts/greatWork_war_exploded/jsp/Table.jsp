@@ -7,10 +7,10 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.List" %>
-<%@ page import="main.java.web.model.StudentMessage" %>
+<%@ page import="main.java.web.model.Student" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%
-    List<StudentMessage> gradeMessage =  (List<StudentMessage>)request.getAttribute("gradeMessages");
+    List<Student> gradeMessage =  (List<Student>)request.getAttribute("gradeMessages");
 %>
 <html>
     <head>
@@ -90,9 +90,9 @@
                         <tr>
                             <td class="body"><%=gradeMessage.get(i).getUserNo()%></td>
                             <td class="body"><%=gradeMessage.get(i).getUserNa()%></td>
-                            <td class="body"><%=gradeMessage.get(i).getUerAge()%></td>
+                            <td class="body"><%=gradeMessage.get(i).getUserAge()%></td>
                             <td class="body"><%=gradeMessage.get(i).getUserSex()%></td>
-                            <td class="body"><%=gradeMessage.get(i).getUerPs()%></td>
+                            <td class="body"><%=gradeMessage.get(i).getUserPs()%></td>
                             <td class="body"><%=gradeMessage.get(i).getCname()%></td>
                             <td class="body"><%=gradeMessage.get(i).getGrade()%></td>
                             <td class="body"><span class="btn1" onclick="openNav1(<%=gradeMessage.get(i).getUserNo()%>)">修改</span></td>

@@ -70,10 +70,11 @@ function register() {
             passWord: passWord,
         },
         success:function () {
-            window.location.href="../jsp/SubmitAndRegister.jsp";
+                window.location.href="../jsp/SubmitAndRegister.jsp";
+
         },
-        error:function (reslut) {
-            alert(reslut);
+        error:function (result) {
+            alert(result);
         },
     })
 }

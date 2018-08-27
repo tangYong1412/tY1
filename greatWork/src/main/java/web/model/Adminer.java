@@ -1,18 +1,20 @@
 package main.java.web.model;
 
-public class Adminer {
-    private String admiNo;
-    private String passWord;
+import main.java.web.Flection.Column;
+import main.java.web.model.base.Entity;
 
-    public Adminer(){
+public class Adminer extends Entity {
+    @Column(value = "admiNo")
+    String adminNo;
+    @Column(value = "passWord")
+    String passWord;
+
+    public String getAdminNo() {
+        return adminNo;
     }
 
-    public String getAdmiNo() {
-        return admiNo;
-    }
-
-    public void setAdmiNo(String admiNo) {
-        this.admiNo = admiNo;
+    public void setAdminNo(String adminNo) {
+        this.adminNo = adminNo;
     }
 
     public String getPassWord() {
@@ -21,5 +23,9 @@ public class Adminer {
 
     public void setPassWord(String passWord) {
         this.passWord = passWord;
+    }
+
+    public String getTableName() {
+        return "admin";
     }
 }

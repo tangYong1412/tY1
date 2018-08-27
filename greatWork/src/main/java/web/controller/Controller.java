@@ -1,77 +1,108 @@
 package main.java.web.controller;
 
-import main.java.web.dao.StudentDao;
+import main.java.web.dao.EnityDao;
 import main.java.web.model.Adminer;
-import main.java.web.model.StudentMessage;
+import main.java.web.model.Student;
 
+import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Controller {
-    StudentDao studentDao = StudentDao.getStudentDao();
+    EnityDao enityDao = EnityDao.getEnityDao();
 
-    public Controller(){
-    }
+    //登录
+    public boolean login(Adminer adminer){
+        List<Adminer> messages = new ArrayList<Adminer>();
 
-    //登陆
-    public boolean submit(String userNo, String passWord) throws SQLException, ClassNotFoundException {
-        if(studentDao.submit(userNo, passWord)){
-            return true;
-    }
-        else {
-            return false;
+        try {
+            messages = enityDao.getMessages(adminer, Adminer.class);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
-    }
 
-/*    //注册>>增加管理员
-    public void register(){
-        Controller controller = new Controller();
-
-        controller.addAOrSMessage("admin");
-    }*/
-
-    //验证管理员账号或学号是否存在
-    public boolean checkUserNumber(String userNumber, String tableName) throws SQLException, ClassNotFoundException {
-        if(tableName.equals("admin")) {
-            if (studentDao.checkUserNumber(userNumber)) {
+        //循环判断该用户名和密码是否存在
+        for(int i=0; i<messages.size(); i++){
+            if(messages.get(i).getAdminNo().equals(adminer.getAdminNo()) && messages.get(i).getPassWord().equals(adminer.getPassWord())){
                 return true;
-            } else {
-                return false;
             }
         }
-        else {
-            if (studentDao.checkStudentNumber(userNumber)) {
-                return true;
-            } else {
-                return false;
-            }
+
+        return false;
+    }
+
+    //管理员注册
+    public void addAdminer(Adminer adminer) throws SQLException, ClassNotFoundException {
+        enityDao.add(adminer, Adminer.class);
+    }
+
+    //学生添加和数据更新
+    public void upateStudnet(Student student, String method) throws SQLException, ClassNotFoundException {
+        if(method.equals("add")){
+            enityDao.add(student, Student.class);
+        }
+        else{
+            enityDao.update(student, Student.class);
         }
     }
 
-    //添加管理员
-    public void addAdminerMessage(String userNumber, String passWord){
-        studentDao.addAdminerMessage(userNumber, passWord);
+    //学生数据删除
+    public void delete(String userNumber) throws NoSuchMethodException, IllegalAccessException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
+        enityDao.delete(userNumber, Student.class);
     }
 
-    //添加学生
-    public void addStudentMessage(StudentMessage studentMessage){
-        studentDao.addStudentMessage(studentMessage);
+    //查看学生信息
+    public List<Student> getStudentMessage() throws SQLException, ClassNotFoundException {
+        return enityDao.getMessages(new Student(), Student.class);
     }
 
-    //查询全部学生的信息
-    public List<StudentMessage> getMessages() throws SQLException, ClassNotFoundException {
-        StudentDao studentDao = StudentDao.getStudentDao();
+    //验证管理员账号或学号是否存在0
+    public boolean checkUserNumber(String userNumber, String tableName) {
+          if(tableName.equals("admin")){
+              List<Adminer> lsit1 = new ArrayList<Adminer>();
+              Adminer adminer = new Adminer();
+              adminer.setAdminNo(userNumber);
+              try {
+                  lsit1 = enityDao.getMessages(adminer , Adminer.class);
+              } catch (SQLException e) {
+                  e.printStackTrace();
+              } catch (ClassNotFoundException e) {
+                  e.printStackTrace();
+              }
 
-        return studentDao.geStudentMessages();
-    }
+              //循环判断该用户名是否存在
+              for(int i=0; i<lsit1.size() ;i++){
+                  if(lsit1.get(i).getAdminNo().equals(adminer.getAdminNo())){
+                      return false;
+                  }
+              }
 
-    //删除指定学号的学生信息
-    public void deleteStudentMessage(String studengNumber){
-        studentDao.deleteStudentMessage(studengNumber);
-    }
+              return true;
+          }
+          else{
+              List<Student> lsit2 = new ArrayList<Student>();
+              Student student = new Student();
+              student.setUserNo(userNumber);
 
-    //修改指定学号的学生信息
-    public void changeStudengMessage(StudentMessage studentMessage) {
-        studentDao.changeStudentMessage(studentMessage);
+              try {
+                  lsit2 = enityDao.getMessages(student , Student.class);
+              } catch (SQLException e) {
+                  e.printStackTrace();
+              } catch (ClassNotFoundException e) {
+                  e.printStackTrace();
+              }
+
+              //循环判断该用户名是否存在
+              for(int i=0; i<lsit2.size() ;i++){
+                  if(lsit2.get(i).getUserNo().equals(student.getUserNo())){
+                      return false;
+                  }
+              }
+
+              return true;
+          }
     }
 }
