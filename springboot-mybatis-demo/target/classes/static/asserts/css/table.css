@@ -1,0 +1,13 @@
+#wrapper{
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#wrapper h3{
+    text-align: center;
+}
+
+.table{
+    text-align: center;
+}

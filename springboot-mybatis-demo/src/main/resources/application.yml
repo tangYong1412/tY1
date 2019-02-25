@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+#连接数据库
+spring:
+  datasource:
+    #mysql jar包6.0以上，要是设置时区
+    url: jdbc:mysql://localhost:3306/stu_information?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: akmm1412
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#配置MyBatis
+mybatis:
+  #映射文件路径
+  mapper-locations: classpath:mapper/*.xml
+  #类型别名包配置，只能指定具体的包名，多个配置可以使用英文逗号分隔
+  type-aliases-package: com.tangyong.springbootmybatisdemo.model

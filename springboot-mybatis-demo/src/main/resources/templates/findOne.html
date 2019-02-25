@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>查找学生</title>
+    <link type="text/css" rel="stylesheet" href="/asserts/css/findOne.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <h3 th:text="${student==null}?'没有该同学信息'"></h3>
+        <h3 th:text="${student!=null}?${student.stuName}+'同学的基本信息'"></h3>
+        <p th:text="${student!=null}?'学号：'+${student.stuId}"></p>
+        <p th:text="${student!=null}?'姓名：'+${student.stuName}"></p>
+        <p th:text="${student!=null}?'姓名：'+${student.stuSex}"></p>
+        <p th:text="${student!=null}?'姓名：'+${student.stuAge}"></p>
+        <p th:text="${student!=null}?'姓名：'+${student.stuProfession}"></p>
+    </div>
+</body>
+</html>

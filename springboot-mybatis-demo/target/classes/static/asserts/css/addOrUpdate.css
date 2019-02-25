@@ -1,0 +1,9 @@
+#wrapper{
+    width: 200px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+#wrapper form input:nth-child(11){
+    margin-top: 30px;
+}
