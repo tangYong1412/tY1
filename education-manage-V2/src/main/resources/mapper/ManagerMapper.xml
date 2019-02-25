@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.educationManage.mapper.ManagerMapper">
+    <!-- 新增教务人员 -->
+    <insert id="insertManager" parameterType="ManagerLoginInfo">
+        insert into manager_info(manager_id, password)
+                select #{managerId}, #{password} from dual
+                where not exists(
+                        select manager_id from manager_info
+                        where manager_id = #{managerId}
+                )
+    </insert>
+
+    <!-- 删除教务人员 -->
+    <delete id="deleteManager" parameterType="java.lang.Integer">
+        delete from manager_info
+                where manager_id = #{managerId}
+    </delete>
+
+    <!-- 获取单个教务人员 -->
+    <select id="selectManagerById" parameterType="java.lang.Integer" resultType="ManagerLoginInfo">
+        select manager_id managerId,
+               password password
+                from manager_info
+                where manager_id = #{managerId}
+    </select>
+
+    <!-- 获取所有的教务人员 -->
+    <select id="selectAllManager" resultType="ManagerLoginInfo">
+        select manager_id managerId,
+               password password
+                from manager_info
+    </select>
+
+    <!-- 修改教务人员信息 -->
+    <update id="updateManager" parameterType="ManagerLoginInfo">
+        update manager_info
+                set password = #{password}
+                where manager_id = #{managerId}
+    </update>
+</mapper>

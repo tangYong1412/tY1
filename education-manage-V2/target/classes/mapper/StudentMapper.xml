@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.educationManage.mapper.StudentMapper">
+    <!-- 新增学生 -->
+    <insert id="insertStudent" parameterType="Student">
+        insert into student_info(stu_id, password, stu_name, sex, faculty)
+            select #{stuId}, #{password}, #{stuName}, #{stuSex}, #{faculty}
+            from dual where not exists(
+                    select stu_id from student_info
+                    where stu_id = #{stuId}
+            );
+    </insert>
+
+    <!-- 删除学生 -->
+    <delete id="deleteStudent" parameterType="java.lang.Long">
+        delete from student_info
+        where stu_id = #{stuId};
+    </delete>
+
+    <!-- 获取所有学生 -->
+    <select id="selectAllStudent" resultType="Student">
+        select stu_id stuId,
+               password password,
+               stu_name stuName,
+               sex stuSex,
+               faculty faculty
+        from student_info;
+    </select>
+
+    <!-- 获取单个学生 -->
+    <select id="selectStudentById" parameterType="java.lang.Long" resultType="Student">
+        select stu_id stuId,
+               stu_name stuName,
+               sex stuSex,
+               faculty faculty
+        from student_info
+        where stu_id = #{stuId}
+    </select>
+
+    <!-- 获取单个学生的登录信息 -->
+    <select id="selectStuLoginInfoById" parameterType="java.lang.Long" resultType="StudentLoginInfo">
+        select stu_id stuId,
+               password password
+        from student_info
+        where stu_id = #{stuId};
+    </select>
+
+    <!-- 修改学生信息 -->
+    <update id="updateStudent" parameterType="Student">
+        update student_info
+        set password = #{password},
+            stu_name = #{stuName},
+            sex = #{stuSex},
+            faculty = #{faculty}
+        where stu_id = #{stuId};
+    </update>
+
+    <!-- 选择课程 -->
+    <insert id="insertCourseChose" parameterType="CourseChose">
+        insert into course_chose_grade(stu_id, course_id, with_book)
+            select #{stuId}, #{courseId}, #{withBook} from dual
+            where not exists (
+                    select course_id from course_chose_grade
+                    where course_id = #{courseId} and stu_id = #{stuId}
+            ) and #{stuId} = (
+                select stu_id from student_info
+                where stu_id = #{stuId}
+            ) and #{courseId} = (
+                select course_id from course_info
+                where course_id = #{courseId}
+            );
+    </insert>
+
+    <!-- 获取课程余量 -->
+    <select id="selectRemain" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+        select remain
+        from course_info
+        where course_id = #{courseId};
+    </select>
+
+    <!-- 课程已选量加一 -->
+    <update id="updateChose" parameterType="java.lang.Integer">
+        update course_info
+            set chose = (
+                      select temp.chose from (
+                        select chose
+                        from course_info
+                        where course_id = #{courseId}
+                      ) temp
+                ) + 1,
+                remain = (
+                        select temp.remain from (
+                          select remain
+                          from course_info
+                          where course_id = #{courseId}
+                        ) temp
+                ) - 1
+            where course_id = #{courseId};
+    </update>
+
+    <!-- 退选课程 -->
+    <delete id="deleteCourseChose" parameterType="CourseChose">
+        delete from course_chose_grade
+        where stu_id = #{stuId}
+              and course_id = #{courseId};
+    </delete>
+
+    <!-- 获取课程已选量 -->
+    <select id="selectChose" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+        select chose
+        from course_info
+        where course_id = #{courseId};
+    </select>
+
+    <!-- 课程余量加一 -->
+    <update id="updateRemain" parameterType="java.lang.Integer">
+        update course_info
+        set chose = (
+                      select temp.chose  from (
+                        select chose
+                        from course_info
+                        where course_id = #{courseId}
+                      ) temp
+                    ) - 1,
+            remain = (
+                        select temp.remain from (
+                         select remain
+                         from course_info
+                         where course_id = #{courseId}
+                        ) temp
+                     ) + 1
+        where course_id = #{courseId};
+    </update>
+
+    <!-- 获取所有已选课程 -->
+    <select id="selectCourseChoseById" parameterType="java.lang.Long" resultType="CourseChose">
+        select course_id courseId,
+               with_book withBook
+        from course_chose_grade
+        where stu_id = #{stuId};
+    </select>
+
+    <!-- 获取某门课程的所有作业 -->
+    <select id="selectAllJobById" parameterType="java.lang.Integer" resultType="Job">
+        select job_id jobId,
+               job_title jobTitle,
+               up_time upTime,
+               end_time endTime,
+               content content,
+               annex annex
+        from job_info
+        where course_id = #{courseId}
+    </select>
+
+    <!-- 获取作业提交次数 -->
+    <select id="selectSubmitTimeById" resultType="java.lang.Integer">
+        select submit_time from up_job_info
+        where stu_id = #{stuId}
+              and job_id = #{jobId};
+    </select>
+
+    <!-- 第一次提交作业 -->
+    <insert id="insertJob" parameterType="JobSubmitted">
+        insert up_job_info(stu_id, job_id, submit_time, up_address)
+            select #{stuId}, #{jobId}, #{submitTimes}, #{upAddress}
+            from dual where #{jobId} = (
+                select job_id
+                from job_info
+                where job_id = #{jobId}
+            ) and #{stuId} = (
+                select stu_id
+                from student_info
+                where stu_id = #{stuId}
+            );
+    </insert>
+
+    <!-- 重新提交作业 -->
+    <update id="updateJobById" parameterType="JobSubmitted">
+        update up_job_info
+        set submit_time = #{submitTimes},
+            up_address = #{upAddress}
+        where stu_id = #{stuId}
+              and job_id = #{jobId};
+    </update>
+
+    <!-- 申请假期 -->
+    <insert id="insertVocation" parameterType="Vocation">
+        insert into vocation_info(
+            course_id, stu_id, begin_time, end_time, reason
+        ) select #{courseId}, #{stuId}, #{beginTime},
+              #{endTime}, #{reason} from dual
+          where #{courseId} = (
+              select course_id from course_info
+              where course_id = #{courseId}
+          ) and #{stuId} = (
+              select stu_id from student_info
+              where stu_id = #{stuId}
+          );
+    </insert>
+
+    <!-- 获取所有假期 -->
+    <select id="selectAllVocation" resultType="Vocation">
+        select vocation_id vocationId,
+               stu_id stuId,
+               begin_time beginTime,
+               end_time endTime
+        from vocation_info
+        where stu_id = #{stuId}
+              and course_id = #{courseId};
+    </select>
+</mapper>
