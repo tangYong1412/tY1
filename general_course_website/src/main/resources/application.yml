@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/general_course_website?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+    username: "root"
+    password: "akmm1412"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.experiment2.gcw_common.gcw_common.domain
+  #打印mybatis日志
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    default-enum-type-handler: org.apache.ibatis.type.EnumTypeHandler
+
+pagehelper:
+    helper-dialect: mysql
+    reasonable: true
+    support-methods-arguments: true
+#reasonable：分页合理化参数，默认值为false。当该参数设置为 true 时，pageNum<=0 时会查询第一页，
+#pageNum>pages（超过总数时），会查询最后一页。默认false 时，直接根据参数进行查询。

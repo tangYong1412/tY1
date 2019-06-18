@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.experiment2.general_course_website.mapper.TestMapper">
+    <select id="test" resultType="com.experiment2.gcw_common.gcw_common.domain.User">
+        select id as `key`, name, pwd as password
+        from user
+        where id = 1;
+    </select>
+</mapper>
